@@ -11,3 +11,15 @@ spring:
       driver-class-name: ${jdbc.driverName}
       username: ${jdbc.username}
       password: ${jdbc.password}
+
+
+
+propertiesDemo:
+  user:
+    name: glamey
+    age: 33
+    email: glamey@glamey.com
+    addresses:
+      - 北京市大兴区
+      - 北京市海淀区
+
