@@ -13,8 +13,9 @@ public class SpringBootTrainApplication {
 
   public static void main(String[] args) {
     ConfigurableApplicationContext context = SpringApplication.run(SpringBootTrainApplication.class, args);
+    System.out.println(context.getBeanFactory());
     //打印环境变量内容
-    printEnvironment(context);
+    //printEnvironment(context);
   }
 
   private static void printEnvironment(ConfigurableApplicationContext context) {
