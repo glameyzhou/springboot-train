@@ -11,15 +11,31 @@ import lombok.Data;
 public class UserDomain implements java.io.Serializable {
 
     private Long id;
-    private String email;
-    private String address;
+    private String code;
+    private String name;
+    private Integer age;
+    private Double salary;
+    private Status status;
 
 
     public UserDomain() {
     }
 
-    public UserDomain(String email, String address) {
-        this.email = email;
-        this.address = address;
+    public UserDomain(String code, String name) {
+        this.code = code;
+        this.name = name;
+    }
+
+    public UserDomain(String code, String name, Integer age, Double salary, Status status) {
+        this.code = code;
+        this.name = name;
+        this.age = age;
+        this.salary = salary;
+        this.status = status;
+    }
+
+    public static enum Status {
+        FREE,
+        BUSY;
     }
 }
